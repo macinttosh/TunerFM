@@ -194,7 +194,7 @@ colorama
 🎉 Contribuições
 
 Issues e forks, todos são muito bem-vindos
-Vamos deixar esse scrobbler cada vez mais O⁠_⁠o
+Vamos deixar esse scrobbler cada vez mais rapido O⁠_⁠o
 
 
 
