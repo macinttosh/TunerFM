@@ -1,219 +1,204 @@
-# TunerFM
-Last.fm Scrobbler but a way cooler
+ 🎛️ TunerFM
 
-
-
-
-# 🎛️ TunerFM
-
-**O scrobbler farmer mais rápido (deve ser o único x3) para Last.fm — milhares de scrobbles em minutos!**  
-The fastest, wildest Last.fm scrobbler—thousands of scrobbles in minutes! :3
+**Last.fm Scrobbler Farmer — absurdamente rápido!**  
+Plante milhares de scrobbles em minutos com o TunerFM :3
 
 
 ## 🇧🇷 Português
 
 ### 🚀 Descrição
-TunerFM é um “scrobbler farmer” que planta **milhares de scrobbles** na sua conta Last.fm em tempo recorde.  
-Ele automatiza desde um único track até discografias inteiras, com delay customizável ou “turbo mode” (intervalo = 0).  
 
-  - `main_menu()`: menu principal multilíngue (PT/EN).  
-  - `settings_menu()`: muda idioma, cores, ASCII art, exibe credenciais.  
-  - `configure_ascii_art()`, `change_language()`, `configure_colors()`, `configure_custom_ascii()`, `view_credentials()`: customizações variadas.  
+TunerFM é um *scrobbler farmer* que injeta **milhares de scrobbles** na sua conta Last.fm em tempo recorde.  
+Ele automatiza desde faixas únicas até discografias inteiras, com delays personalizáveis ou o insano **turbo mode** (`interval = 0`).
 
-### 📦 Pré-requisitos
-- Python 3.7+  
-- Última versão de `pip`  
-- Libs Python (instalar via `requirements.txt`):
+### ⚙️ Funções Principais
 
-  ```txt
-  pylast
-  colorama
+- `main_menu()`: menu principal multilíngue (PT/EN)  
+- `settings_menu()`: ajustes de idioma, cores, ASCII art, visualização de credenciais  
+- Helpers:  
+  - `configure_ascii_art()`  
+  - `change_language()`  
+  - `configure_colors()`  
+  - `configure_custom_ascii()`  
+  - `view_credentials()`
 
-📁 Estrutura
+---
 
-TunerFM/
-├── tunerfm.py         # seu script principal
-├── requirements.txt   # lista de dependências
-└── README.md          # este arquivo
+### 📦 Requisitos
 
-🛠️ Instalação & Uso em Todas as Plataformas
+- Python **3.7+**
+- Última versão do `pip`
+- Dependências (instalar com `requirements.txt`):
 
-> Dica geral: crie sempre um virtualenv para isolamento:
-
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-
-
-💻 PC (Windows, Linux, macOS)
-
-1. Clone o repositório e entre na pasta:
-
-git clone https://github.com/macinttosh/TunerFM.git
-cd TunerFM
-
-
-2. Instale dependências:
-
-pip install --upgrade pip
-pip install -r requirements.txt
-
-
-3. Execute:
-
-python3 tunerfm.py
-
-
-
-📱 Termux (Android)
-
-1. Atualize e instale Python:
-
-pkg update && pkg install python git
-
-
-2. Clone e instale:
-
-git clone https://github.com/macinttosh/TunerFM.git
-cd TunerFM
-pip install --upgrade pip
-pip install -r requirements.txt
-
-
-3. Execute:
-
-python3 tunerfm.py
-
-
-
-🤖 Pydroid 3 (Android)
-
-1. Abra o Pydroid 3 e copie a pasta TunerFM para o armazenamento interno.
-
-
-2. No menu lateral, acesse PIP e instale manualmente:
-
+```txt
 pylast
-
 colorama
 
 
 
-3. Abra tunerfm.py no editor do Pydroid 3 e toque em Run.
+📁 Estrutura do Projeto
+
+TunerFM/
+├── tunerfm.py         # Script principal
+├── requirements.txt   # Lista de dependências
+└── README.md          # Este arquivo
+
+
+
+💻 Instalação & Uso
+
+🖥️ PC (Windows, Linux, macOS)
+
+# Clone o repositório
+git clone https://github.com/macinttosh/TunerFM.git
+cd TunerFM
+
+# (Recomendado) Crie um ambiente virtual
+python3 -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+
+# Instale as dependências
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Execute
+python3 tunerfm.py
+
+📱 Termux (Android)
+
+pkg update && pkg install python git
+
+git clone https://github.com/macinttosh/TunerFM.git
+cd TunerFM
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+python3 tunerfm.py
+
+🤖 Pydroid 3 (Android)
+
+1. Baixe o tunerfm.py
+
+
+2. No menu lateral do Pydroid, vá até PIP e instale:
+
+
+
+pylast
+colorama
+
+3. Abra tunerfm.py no editor e toque em Run.
+
+
 
 
 🇺🇸 English
 
 🚀 Description
 
-TunerFM is a Last.fm “scrobbler farmer” that plants thousands of scrobbles on your account in record time.
-It automates everything from a single track up to entire discographies, with custom delays or full “turbo mode” (interval = 0).
+TunerFM is a scrobbler farmer that injects thousands of scrobbles into your Last.fm account in record time.
+It automates anything from a single track to full discographies, with custom delay or full turbo mode (interval = 0).
+
+⚙️ Key Functions
+
+main_menu(): multilanguage interface (EN/PT)
+
+settings_menu(): tweak language, colors, ASCII art, reveal credentials
+
+Customization helpers:
+
+configure_ascii_art()
+
+change_language()
+
+configure_colors()
+
+configure_custom_ascii()
+
+view_credentials()
 
 
-Menus & Helpers
-
-main_menu(): multilanguage main menu (EN/PT).
-
-settings_menu(): change language, colors, ASCII art, reveal creds.
-
-Customization helpers: ASCII art, language, colors, credentials view.
 
 
+---
 
-📦 Prerequisites
+📦 Requirements
 
 Python 3.7+
 
 Latest pip
 
-Python libs (install via requirements.txt):
+Install with requirements.txt:
+
 
 pylast
 colorama
 
 
-📁 Structure
+---
+
+📁 Project Structure
 
 TunerFM/
-├── tunerfm.py         # main script
-├── requirements.txt   # dependencies list
-└── README.md          # this file
-
-Install & Run on Any Platform
+├── tunerfm.py         # Main script
+├── requirements.txt   # Dependencies list
+└── README.md          # This file
 
 
+---
 
- PC (Windows, Linux, macOS)
+💻 Installation & Usage
 
-1. Clone & cd:
+🖥️ PC (Windows, Linux, macOS)
 
 git clone https://github.com/macinttosh/TunerFM.git
 cd TunerFM
 
-
-2. Install deps:
+python3 -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 pip install --upgrade pip
 pip install -r requirements.txt
 
-
-3. Run:
-
 python3 tunerfm.py
-
-
 
 📱 Termux (Android)
 
-1. Setup:
-
 pkg update && pkg install python git
-
-
-2. Clone, install:
 
 git clone https://github.com/macinttosh/TunerFM.git
 cd TunerFM
+
 pip install --upgrade pip
 pip install -r requirements.txt
 
-
-3. Run:
-
 python3 tunerfm.py
-
-
 
 🤖 Pydroid 3 (Android)
 
-1. Copy TunerFM folder to Pydroid 3 storage.
+1. download tunerfm.py
 
 
-2. In Pydroid’s PIP, install:
+2. In PIP menu, install:
+
+
 
 pylast
-
 colorama
 
-
-
-3. Open tunerfm.py and hit Run.
-
-
+3. Open tunerfm.py and hit Run
 
 
 
 🎉 Contribuições
 
-Issues, PRs e forks são muito bem-vindos! Vamos deixar esse scrobbler cada vez mais louco e eficiente. O⁠_⁠o
+Issues e forks, todos são muito bem-vindos
+Vamos deixar esse scrobbler cada vez mais O⁠_⁠o
 
 
 
+📄 Licença
 
-> License: MIT
-(funny enough idk even why did i put a license 0_0)
-
-
-
-
-
+MIT
+(funny enough, I don’t even know why I put a license 0_0)
