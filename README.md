@@ -211,8 +211,7 @@ Issues, PRs e forks são muito bem-vindos! Vamos deixar esse scrobbler cada vez 
 
 
 > License: MIT
-Author: Seu Nome Aqui
-Repo: https://github.com/macinttosh/TunerFM
+(funny enough idk even why did i put a license 0_0)
 
 
 
