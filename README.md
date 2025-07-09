@@ -46,11 +46,9 @@ To use TunerFM, you’ll need 3 essential pieces of information:
 You can generate your MD5 password hash using Python:
 
 ```import pylast
-
 password = input("Insert your Last.fm Actual Password: ")
 password_hash = pylast.md5(password)
 print(f"your password hash is: {password_hash}")
-
 ```
 
 Or use a trusted MD5 hash generator like:  
@@ -196,11 +194,9 @@ Para usar o TunerFM, você precisará de 3 dados importantes:
 Você pode gerar sua senha em formato MD5 usando Python:
 
 ```import pylast
-
 password = input("Digite sua senha do Last.fm: ")
 password_hash = pylast.md5(password)
 print(f"Seu password hash é: {password_hash}")
-
 ```
 
 Ou use algum gerador online confiável de MD5 (ex: [https://www.md5hashgenerator.com/](https://www.md5hashgenerator.com/)).
