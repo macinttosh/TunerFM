@@ -93,9 +93,9 @@ colorama
 
 
 
-🇺🇸 English
+## 🇺🇸 English
 
-🚀 Description
+### 🚀 Description
 
 TunerFM is a scrobbler farmer that injects thousands of scrobbles into your Last.fm account in record time.
 It automates anything from a single track to full discographies, with custom delay or full turbo mode (interval = 0).
