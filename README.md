@@ -25,6 +25,47 @@ view_credentials()
 ```
 
 ---
+### 🔐 **Last.fm API Credentials**
+
+To use TunerFM, you’ll need 3 essential pieces of information:
+
+1. **API Key**  
+2. **Shared Secret**  
+3. **Your password in MD5 hash format**
+
+---
+
+#### How to get them:
+
+🔸 **API Key & Shared Secret**  
+1. Go to: [https://www.last.fm/api/account/create](https://www.last.fm/api/account/create)  
+2. Create a new application  
+3. Copy your **API Key** and **Shared Secret**
+
+🔸 **Generate your MD5 password hash**  
+You can generate your MD5 password hash using Python:
+
+```import pylast
+
+password = input("Insert your Last.fm Actual Password: ")
+password_hash = pylast.md5(password)
+print(f"your password hash is: {password_hash}")
+
+```
+
+Or use a trusted MD5 hash generator like:  
+[https://www.md5hashgenerator.com/](https://www.md5hashgenerator.com/)
+
+---
+
+#### Inserting your credentials into TunerFM
+
+When you launch the program for the first time, it will ask for your credentials.  
+You can also view them later from the settings menu:
+
+```python
+settings_menu() ➜ view_credentials()
+```
 
 ### 📦 **Requirements**
 
@@ -135,6 +176,42 @@ view_credentials()
 ```
 
 ---
+
+### 🔐 **Credenciais da API do Last.fm**
+
+Para usar o TunerFM, você precisará de 3 dados importantes:
+
+1. **API Key**
+2. **Shared Secret**
+3. **Senha em hash MD5**
+
+#### Como conseguir:
+
+🔸 **API Key & Shared Secret**  
+1. Acesse: [https://www.last.fm/api/account/create](https://www.last.fm/api/account/create)  
+2. Crie uma nova aplicação  
+3. Copie a **API Key** e o **Shared Secret**
+
+🔸 **Gerar senha em hash MD5**  
+Você pode gerar sua senha em formato MD5 usando Python:
+
+```import pylast
+
+password = input("Digite sua senha do Last.fm: ")
+password_hash = pylast.md5(password)
+print(f"Seu password hash é: {password_hash}")
+
+```
+
+Ou use algum gerador online confiável de MD5 (ex: [https://www.md5hashgenerator.com/](https://www.md5hashgenerator.com/)).
+( na verdade eu não faço ideia se isso funciona alem do gerador hash do proprio pylast )
+#### Inserir credenciais no TunerFM
+
+Quando o programa for iniciado pela primeira vez, ele pedirá suas credenciais. Você também pode visualizá-las depois em:
+
+```python
+settings_menu() ➜ view_credentials()
+```
 
 ### 📦 **Requisitos**
 
