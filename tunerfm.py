@@ -169,7 +169,7 @@ ASCII_ARTS = {
 """
 }
 
-# Adicionar arte personalizada se existir
+# cruzes
 if 'custom_ascii_art' in user_config and user_config['custom_ascii_art']:
     ASCII_ARTS['custom'] = user_config['custom_ascii_art']
 
@@ -422,7 +422,7 @@ def view_credentials():
     color_manager.print_secondary("Pressione ENTER para revelar as credenciais (manter pressionado para ver)")
     color_manager.print_secondary("Solta a tecla para ocultar automaticamente")
     
-    # Aguardar confirmacao do usuário
+    # input enter
     input()
     
     # Mostrar credenciais enquanto ENTER estiver pressionado
@@ -433,7 +433,7 @@ def view_credentials():
     color_manager.print_secondary(f"Password Hash: {credentials['password_hash']}")
     color_manager.print_primary("\nSolta ENTER para ocultar...")
     
-    # Aguardar ate que o usuário solte a tecla
+    # Aguardar ate que o usuario solte a ttecla
     input()
     
     # replace com espaços em branco para "ocultar" nao sei programar isso
@@ -528,7 +528,7 @@ def scrobble_by_artist_discography(scrobbler):
         time.sleep(2)
         return
 
-    # Evento e thread específicos para a fase de coleta
+    # thread que me quebrou a cabeca
     collect_stop_event = threading.Event()
     input_thread = None
 
@@ -537,7 +537,7 @@ def scrobble_by_artist_discography(scrobbler):
         collect_stop_event.set()
         color_manager.print_primary("\nInterrupção solicitada. Finalizando operação...")
 
-    # Inicia thread para capturar Enter durante a coleta
+    # Inicia thread pra capturar Enter durante a coleta
     input_thread = threading.Thread(target=check_for_enter, daemon=True)
     input_thread.start()
 
@@ -664,7 +664,7 @@ def main_menu():
         clear_screen()  
         color_manager.print_primary(ASCII_ARTS[CURRENT_ASCII_ART])
         
-        # Menu com suporte a idiomas
+        # torre de babel
         menu_text = {
             'pt': {
                 'title': "\n--- Menu Principal Last.fm Scrobbler ---",
